@@ -17,7 +17,6 @@ class AuthenticationController < ApplicationController
                 token = JWT.encode(payload, secret) 
 
                 render json: { token: token }
-
             end
         end
     end
