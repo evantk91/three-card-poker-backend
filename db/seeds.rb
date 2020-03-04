@@ -8,9 +8,3 @@
 
 User.destroy_all
 Score.destroy_all
-
-user1 = User.create(username: "Evan", password: "shadow")
-user2 = User.create(username: "Jeremy", password: "snowboarding")
-
-score1 = Score.create(user: user1, score: 1200)
-score2 = Score.create(user: user1, score: 2000)
