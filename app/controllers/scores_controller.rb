@@ -1,4 +1,6 @@
 class ScoresController < ApplicationController
+    before_action :authenticate, only: [:index, :show, :create, :destroy]
+
     def index
         @scores = Score.all
         render json: @scores 
