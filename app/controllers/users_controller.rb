@@ -10,10 +10,15 @@ class UsersController < ApplicationController
     end
 
     def create
-        @user = User.create(
+        @user = User.new(
             username: params[:username],
             password: params[:password]
         )
-        render json: @user
+
+        if @user.save
+            render json: @user, status: :created
+        else
+            render json: {error: "password needs to be 5 characters or more"}, status: :bad_request
+        end
     end
 end
