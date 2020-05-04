@@ -1,24 +1,24 @@
-# README
+# Three Card Poker: Back End
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application simulating the three card poker casino game. The user interface is written in vanilla Javascript and the back end is written in Ruby on Rails. The back end stores user information and scores in a postgres relational database. JWT authenticaltion is used for the user login. The application is deployed on Heroku and Google Firebase.
 
-Things you may want to cover:
+Built with:
 
-* Ruby version
+Javascript, Ruby (2.6.1), Rails (6.0.2), postgresql 12
 
-* System dependencies
+How to run the game locally:
+1. Fork and clone "three-card-poker-backend" along with the corresponding backend "three-card-poker-frontend" (https://github.com/evantk91/three-card-poker-frontend)
+2. Run "bundle install" to install the appropriate gems.
+3. Run the rails server using the command "rails s" and run the front end using lite-server or equivalent
 
-* Configuration
+Three card poker is hosted on Google Firebase here => https://three-card-poker-c156c.firebaseapp.com/
 
-* Database creation
+Author:
 
-* Database initialization
+Evan Greer (email: etgreer91@gmail.com, linkedIn: https://www.linkedin.com/in/evantkgreer)
 
-* How to run the test suite
+Acknowledgements:
 
-* Services (job queues, cache servers, search engines, etc.)
+Chase Roberts for the deck of cards API (https://deckofcardsapi.com/), Jeremy Gray for contributing to the command line version of three card poker this is based on (https://github.com/evantk91/module_1_project_three_card_poker)
 
-* Deployment instructions
-
-* ...
+![](demo.gif)
